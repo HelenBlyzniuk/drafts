@@ -12,4 +12,23 @@
   --card-pink:#D6936D;
   --main-title-style:Seymour One;
   --text-font-style:Montserrat;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 16px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */
