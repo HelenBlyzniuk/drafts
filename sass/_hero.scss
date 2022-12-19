@@ -1,0 +1,22 @@
+.hero{
+    background-color: var(--hero-background-color);
+}
+
+.hero-container{
+@media screen and (min-width:320px){
+        padding-top: 50px;
+    }
+ 
+}
+
+.hero-title{
+    
+    font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--white-text-color);
+        @media screen and (min-width:320px){
+
+        }
+}
