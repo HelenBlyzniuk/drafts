@@ -46,12 +46,14 @@ body {
   .container {
     padding: 0 32px;
     margin: 0 auto;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     padding: 0 16px;
     margin: 0 auto;
+    max-width: 1200px;
   }
 }
 
@@ -67,6 +69,12 @@ header {
 @media screen and (min-width: 320px) {
   .header-container {
     padding-top: 12px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 20px;
     position: relative;
   }
 }
@@ -88,6 +96,17 @@ header {
   line-height: 1.21875;
   color: var(--white-text-color);
   opacity: 1;
+}
+@media screen and (max-width: 1199px) {
+  .mob-menu {
+    font-size: 48px;
+    line-height: 1.2291666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .mob-menu.is-hidden {
@@ -129,16 +148,102 @@ header {
   background-color: transparent;
   border: none;
 }
+@media screen and (min-width: 1200px) {
+  .mob-menu-close, .mob-menu-open {
+    display: none;
+  }
+}
 
-.buy {
+@media screen and (min-width: 320px) {
+  .buy {
+    width: 152px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: none;
+  }
+  .buy-link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buy {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buy_tablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buy_tablet {
+    display: block;
+    width: 152px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: none;
+  }
+  .buy_tablet-link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .buy_tablet {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buy_tablet {
+    display: none;
+  }
+}
+
+.sandwich-icon, .cross-icon {
+  fill: var(--white-text-color);
+}
+
+.tab-menu-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+.buy_desktop {
+  display: block;
   width: 152px;
   height: 42px;
   background: #F8D24E;
   border-radius: 10px;
-  margin: 0 auto;
+  margin-left: 204px;
   border: none;
 }
-.buy-link {
+@media screen and (max-width: 1199px) {
+  .buy_desktop {
+    display: none;
+  }
+}
+.buy_desktop-link {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -147,8 +252,24 @@ header {
   text-decoration: none;
 }
 
-.sandwich-icon, .cross-icon {
-  fill: var(--white-text-color);
+.desktop-nav-list {
+  display: flex;
+  gap: 28px;
+  margin-left: 308px;
+}
+
+.desktop-nav-link {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white-text-color);
+}
+.desktop-nav-link:focus, .desktop-nav-link:hover {
+  cursor: pointer;
+  color: var(--hero-yellow);
 }
 
 .hero {
