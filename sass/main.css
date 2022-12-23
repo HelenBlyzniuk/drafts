@@ -66,23 +66,25 @@ body {
 
 header {
   background-color: rgb(132, 161, 120);
+  padding-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 20px;
+  }
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 12px;
 }
 @media screen and (max-width: 320px) {
   .header-container {
-    padding-top: 12px;
     position: relative;
   }
 }
 @media screen and (min-width: 768px) {
   .header-container {
-    padding-top: 20px;
     position: relative;
   }
 }
@@ -118,16 +120,10 @@ header {
   color: var(--white-text-color);
   opacity: 1;
 }
-@media screen and (min-width: 480px) {
-  .mob-menu {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .mob-menu {
     font-size: 48px;
     line-height: 1.2291666667;
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -178,14 +174,17 @@ header {
   height: 32px;
   background-color: transparent;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: 0;
+  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
   .mob-menu-close, .mob-menu-open {
     display: none;
   }
+}
+
+.mob-menu-close {
+  display: flex;
 }
 
 @media screen and (min-width: 320px) {
@@ -229,7 +228,7 @@ header {
     height: 42px;
     background: #F8D24E;
     border-radius: 10px;
-    margin: 0 auto;
+    margin-left: 32px;
     border: none;
   }
   .buy_tablet-link {
@@ -254,17 +253,6 @@ header {
 
 .sandwich-icon, .cross-icon {
   fill: var(--white-text-color);
-}
-
-.tab-menu-wrapper {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .tab-menu-wrapper {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -321,4 +309,58 @@ header {
   .plate {
     display: none;
   }
+}
+
+.hero {
+  background-color: var(--hero-background-color);
+  background-image: url(../images/mobile-ice-cream.png), url(../images/dots.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+@media screen and (min-width: 320px) {
+  .hero-container {
+    padding-top: 50px;
+    padding-bottom: 236px;
+  }
+}
+.hero-title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+@media screen and (min-width: 320px) {
+  .hero-title {
+    width: 247px;
+  }
+  .hero-title-ice, .hero-title-made {
+    font-size: 26px;
+    line-height: 1.2692307692;
+    letter-spacing: 0.04em;
+  }
+  .hero-title-passion {
+    font-size: 34px;
+    line-height: 96.5%;
+  }
+}
+.hero-button {
+  min-width: 108px;
+  height: 38px;
+  border: 2px solid #F8D24E;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.hero-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--hero-yellow);
+}
+.hero-interactive-elements {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
