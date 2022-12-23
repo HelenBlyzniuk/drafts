@@ -16,6 +16,13 @@
                     <use href="./images/icons.svg#icon-Logo"></use>
                 </svg>      
             </a>
+
+            <button class="mob-menu-open mobile" type="button" data-menu-open>
+                <svg class="sandwich-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-sandwich"></use>
+                </svg>
+            </button>
+
         <div class="tab-menu-wrapper">
             <button class="mob-menu-open" type="button" data-menu-open>
                 <svg class="sandwich-icon" width="32" height="32">
@@ -103,39 +110,7 @@
                 </div>
             </div>
 
-            <!--
-            <div class="backdrop is-hidden">
-
-            <div class="buy_modal">
-                <h5 class="buy_title">Buy now</h5>
-                <ul class="buy_products">
-                    <li class="buy_item">
-                        <img src="" alt="" class="buy_img">
-                        <p class="buy_name">ice cream</p>
-                    </li>
-                    <li class="buy_item">
-                        <img src="" alt="" class="buy_img">
-                        <p class="buy_name">ice coffee</p>
-                    </li>
-                    <li class="buy_item">
-                        <img src="" alt="" class="buy_img">
-                        <p class="buy_name">milkshake</p>
-                    </li>
-                </ul>
-                <form action="" class="buy_form">
-                    <label for="" class="buy-form-name" >
-                        <input type="name" class="buyer-name" placeholder="name">
-                    </label>
-                    <label for="" class="buy-form-name" >
-                        <input type="tel" class="buyer-phone" placeholder="phone">
-                    </label>
-                    <label for="" class="buy-form-name" placeholder=>
-                        <textarea name="buyer-comments" id="" cols="30" rows="10" placeholder="comments" ></textarea>
-                    </label>
-                </form>
-
-                <button class="buy_submit" type="button">Submit</button>
-            </div>-->
+            
         </div>
     </div>
     <div class="hero">
@@ -151,7 +126,7 @@
             
             <a href="#advantages" class="hero-link">How it’s made?</a>
           </div>
-          <picture>
+          <picture class="plate">
             <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
             <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
             <img src="./images/plate-desktop.jpg" alt="a plate" class="plate">
@@ -159,14 +134,17 @@
          
 
         <picture>
-            <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
-            <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
+            <source srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop_2x.png 2x " media="(max-width:767px)"
+                width="152px">
+            <source srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop_2x.png 2x " media="(min-width:768px)" width="152px">
+            <source srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop_2x.png 2x " media="(min-width:1200px)" width="225px">
             <img src="./images/ice-cream-desktop.png" alt="ice-cream" class="ice-cream">
         </picture>
 
         <picture>
-            <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
-            <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
+            <source srcset="./images/desktop-dots.png 1x, ./images/desktop-dots_2x.png 2x " media="(max-width:767px)" width="152">
+            <source srcset="./images/desktop-dots.png 1x, ./images/desktop-dots_2x.png 2x " media="(min-width:768px)" width="152">
+            <source srcset="./images/desktop-dots.png 1x, ./images/desktop-dots_2x.png 2x " media="(min-width:1200px)" width="225">
             <img src="./images/desktop-dots.png" alt="dots" class="dots">
         </picture>
           
