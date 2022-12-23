@@ -299,7 +299,6 @@ header {
 
 .hero {
   background-color: var(--hero-background-color);
-  background-image: url(../images/mobile-ice-cream.png), url(../images/dots.png);
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -330,12 +329,21 @@ header {
     line-height: 96.5%;
   }
 }
-.hero-button {
+.hero-link-products {
+  display: block;
   min-width: 108px;
   height: 38px;
   border: 2px solid #F8D24E;
   border-radius: 8px;
   background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 11px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
 }
 .hero-link {
   font-family: "Montserrat";
