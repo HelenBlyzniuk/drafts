@@ -17,6 +17,17 @@ background-color: rgba(132, 161, 120, 1);
     }
 }
 
+.logo-icon{
+    @media screen and (min-width:768px) {
+        width:48px;
+        height:44px;
+    }
+    @media screen and (min-width:1200px) {
+        width:60px;
+        height:65px;
+    }
+}
+
 .mob-menu{
     display:block;
     position:fixed;
@@ -35,8 +46,9 @@ background-color: rgba(132, 161, 120, 1);
         line-height: calc(39/32);
         color:var(--white-text-color);
         opacity:1;
+       
 
-        @media screen and (max-width:1199px) {
+        @media screen and (min-width:768px) {
             
            font-size: 48px;
            line-height: calc(59/48);
@@ -68,6 +80,9 @@ background-color: rgba(132, 161, 120, 1);
         padding-right: 20px;
        
 }
+.mob-nav{
+    padding-left: 12px;
+}
 
 .mob-nav-list{
     display:flex;
@@ -85,21 +100,29 @@ background-color: rgba(132, 161, 120, 1);
     height:32px;
     background-color: transparent;
     border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     
     @media screen and (min-width:1200px) {
         display:none;
     }
 }
+
+
 .buy{
     @media screen and (min-width:320px) {
         
     
-    width:152px;
+   min-width:152px;
     height:42px;
     background: #F8D24E;
         border-radius: 10px;
         margin:0 auto;
         border:none;
+        display:flex;
+        justify-content: center;
+        
         &-link{
             font-family: 'Montserrat';
                 font-style: normal;
@@ -107,6 +130,9 @@ background-color: rgba(132, 161, 120, 1);
                 font-size: 14px;
                 line-height: 17px;
                 text-decoration: none;
+               display: inline-block; 
+               min-width:152px;
+               padding-top: 12px;
         }
     } 
 
