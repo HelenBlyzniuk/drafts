@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./sass/main.css">
     <title>ice-cream-site</title>
@@ -122,6 +126,21 @@
             
             <a href="#advantages" class="hero-link">How it’s made?</a>
           </div>
+
+          <p class="hero-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          </p>
+
+          <ul class="hero-achivements">
+            <li class="hero-achievements-item">
+                <span class="number">16</span>cafes
+            </li>
+            <li class="hero-achievements-item">
+                <span class="number">23</span> food trucks
+            </li>
+          </ul>
+          
+
           <picture class="plate">
             <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
             <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
@@ -137,13 +156,15 @@
             <img src="./images/ice-cream-desktop.png" alt="ice-cream" class="ice-cream">
         </picture>
         
-        <picture>
-            <source srcset="./images/mob-dots.png 1x, ./images/mob-dots_2x.png 2x" media="(min-width:320px)" width="480">
-        </picture>
-        
-          
-          
-        
+        <img class="dots-img"
+        srcset="./images/mob-dots.png 320w,
+                  ./images/mob-dots_2x.png 640w,
+                  ./images/tablet-dots.png 768w,
+                  ./images/tablet-dots_2x.png 1536w,
+                  ./images/desktop-dots.png 1200w,
+                  ./images/desktop-dots_2x.png 2400w"
+        src="./images/desktop-dots.png" alt="dots"
+        width="100vw">
         </div>
     </header>
    

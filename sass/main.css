@@ -324,12 +324,21 @@ header {
     padding-bottom: 236px;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding-top: 14px;
+    padding-bottom: 0;
+    height: 349px;
+  }
+}
 .hero-title {
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--white-text-color);
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 320px) {
   .hero-title {
@@ -364,6 +373,25 @@ header {
   display: flex;
   gap: 12px;
   align-items: center;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 767px) {
+  .hero-description {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-description {
+    display: block;
+    width: 139px;
+    margin-left: 184px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1333333333;
+    color: #FCFCFC;
+  }
 }
 
 .hero-link-products {
@@ -388,7 +416,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .ice-cream-img {
-    left: 408px;
+    right: 370px;
   }
 }
 
@@ -396,6 +424,69 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  max-width: 480px;
   z-index: 1;
+  width: 100vw;
+  height: auto;
+}
+@media screen and (min-width: 460px) {
+  .dots-img {
+    width: 460px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dots-img {
+    width: 768px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dots-img {
+    width: 1200px;
+    height: auto;
+  }
+}
+
+.plate {
+  position: absolute;
+  z-index: 3;
+  left: 16px;
+  bottom: 0;
+  width: 152px;
+  height: 152px;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .plate {
+    display: none;
+  }
+}
+
+.hero-achivements {
+  width: 46px;
+  position: absolute;
+  top: 28px;
+  right: 32px;
+}
+
+.hero-achievements-item {
+  font-size: 8px;
+  line-height: 1.5;
+  text-align: right;
+  color: #FCFCFC;
+}
+.hero-achievements-item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.number {
+  display: block;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 4px;
 }/*# sourceMappingURL=main.css.map */
