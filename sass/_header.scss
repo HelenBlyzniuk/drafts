@@ -52,7 +52,7 @@ padding-top: 12px;
         font-weight: 700;
         font-size: 32px;
         line-height: calc(39/32);
-        color:var(--white-text-color);
+        color:#FCFCFC;
         opacity:1;
 
        
@@ -78,7 +78,14 @@ padding-top: 12px;
 }
 .mob-nav-link:hover,
 .mob-nav-link:focus{
-    color:var(--black-text-color);
+    @media screen and (max-width:1199px) {
+    color: #131313;
+    }
+    @media screen and (min-width:1200px) {
+       cursor:grab;
+       color:#F8D24E; 
+    }
+   
 }
 
 .mob-menu-overlay{
@@ -188,7 +195,7 @@ padding-top: 12px;
     }
 }
 .sandwich-icon,.cross-icon {
-fill: var(--white-text-color);
+fill: #FCFCFC;
 }
 
 
@@ -237,7 +244,7 @@ fill: var(--white-text-color);
     &:focus,
     &:hover{
         cursor: pointer;
-        color:var(--hero-yellow);
+        color:#F8D24E;
     }
 }
 

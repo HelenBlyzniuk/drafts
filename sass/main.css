@@ -118,7 +118,7 @@ header {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.21875;
-  color: var(--white-text-color);
+  color: #FCFCFC;
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
@@ -143,9 +143,19 @@ header {
   text-decoration: none;
 }
 
-.mob-nav-link:hover,
+@media screen and (max-width: 1199px) {
+  .mob-nav-link:hover,
 .mob-nav-link:focus {
-  color: var(--black-text-color);
+    color: #131313;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-nav-link:hover,
+.mob-nav-link:focus {
+    cursor: -webkit-grab;
+    cursor: grab;
+    color: #F8D24E;
+  }
 }
 
 .mob-menu-overlay {
@@ -253,7 +263,7 @@ header {
 }
 
 .sandwich-icon, .cross-icon {
-  fill: var(--white-text-color);
+  fill: #FCFCFC;
 }
 
 @media screen and (max-width: 1199px) {
@@ -302,7 +312,7 @@ header {
 }
 .desktop-nav-link:focus, .desktop-nav-link:hover {
   cursor: pointer;
-  color: var(--hero-yellow);
+  color: #F8D24E;
 }
 
 /*--hero--*/
@@ -329,6 +339,13 @@ header {
     padding-top: 14px;
     padding-bottom: 0;
     height: 349px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-top: 45px;
+    padding-bottom: 103px;
+    height: 593px;
   }
 }
 .hero-title {
@@ -393,7 +410,6 @@ header {
     color: #FCFCFC;
   }
 }
-
 .hero-link-products {
   display: block;
   border: 2px solid #F8D24E;
@@ -417,6 +433,12 @@ header {
 @media screen and (min-width: 768px) {
   .ice-cream-img {
     right: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ice-cream-img {
+    right: 92px;
+    width: 456px;
   }
 }
 
@@ -461,12 +483,26 @@ header {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .plate {
+    width: 225px;
+    height: 225px;
+  }
+}
 
-.hero-achivements {
-  width: 46px;
-  position: absolute;
-  top: 28px;
-  right: 32px;
+@media screen and (max-width: 767px) {
+  .hero-achivements {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-achivements {
+    display: block;
+    width: 46px;
+    position: absolute;
+    top: 28px;
+    right: 32px;
+  }
 }
 
 .hero-achievements-item {
