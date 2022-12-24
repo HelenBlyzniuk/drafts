@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>ice-cream-site</title>
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <a href="" class="logo">
+                <svg class="logo-icon" width="40" height="37" >
+                    <use href="./images/icons.svg#icon-Logo"></use>
+                </svg>      
+            </a>
+        <div class="tab-menu-wrapper">
+            <button class="mob-menu-open" type="button" data-menu-open>
+                <svg class="sandwich-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-sandwich"></use>
+                </svg>
+            </button>
+            <button class="buy_tablet" type="button">
+                <a href="" class="buy_tablet-link">
+                    Buy now
+                </a>
+            </button>
+        </div>
+
+        <nav class="desktop-nav">
+            <ul class="desktop-nav-list">
+                <li class="desktop-nav-item">
+                   <a href="" class="desktop-nav-link">Home</a>
+                </li>
+
+               <li class="desktop-nav-item">
+                   <a href="" class="desktop-nav-link">How it’s made?</a>
+               </li>
+
+               <li class="desktop-nav-item">
+                   <a href="" class="desktop-nav-link">Our products</a>
+               </li>
+
+               <li class="desktop-nav-item">
+                   <a href="" class="desktop-nav-link">Contact</a>
+               </li>
+           </ul>
+        </nav>
+        <button class="buy_desktop" type="button">
+            <a href="" class="buy_desktop-link">
+                Buy now
+            </a>
+        </button>
+
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="mob-hidden-wrapper">
+                <div class="mob-menu-overlay" >
+                    <a href="" class="logo">
+                        <svg class="logo-icon" width="40" height="37">
+                            <use href="./images/icons.svg#icon-Logo"></use>
+                        </svg>
+                    </a>
+                    
+                    <button class="mob-menu-close" type="button" data-menu-close>
+                        <svg class="cross-icon" width="32" height="32">
+                            <use href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+
+                  
+                </div>
+
+            
+               
+                <nav class="mob-nav">
+                    <ul class="mob-nav-list">
+                         <li class="mob-nav-item">
+                            <a href="" class="mob-nav-link" >Home</a>
+                         </li>
+
+                        <li class="mob-nav-item">
+                            <a href="" class="mob-nav-link">How it’s made?</a>
+                        </li>
+
+                        <li class="mob-nav-item">
+                            <a href="" class="mob-nav-link">Our products</a>
+                        </li>
+
+                        <li class="mob-nav-item">
+                            <a href="" class="mob-nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+
+                <button class="buy" type="button">
+                    <a href="" class="buy-link">
+                        Buy now
+                    </a>
+                </button>
+                </div>
+            </div>
+
+            <!--
+            <div class="backdrop is-hidden">
+
+            <div class="buy_modal">
+                <h5 class="buy_title">Buy now</h5>
+                <ul class="buy_products">
+                    <li class="buy_item">
+                        <img src="" alt="" class="buy_img">
+                        <p class="buy_name">ice cream</p>
+                    </li>
+                    <li class="buy_item">
+                        <img src="" alt="" class="buy_img">
+                        <p class="buy_name">ice coffee</p>
+                    </li>
+                    <li class="buy_item">
+                        <img src="" alt="" class="buy_img">
+                        <p class="buy_name">milkshake</p>
+                    </li>
+                </ul>
+                <form action="" class="buy_form">
+                    <label for="" class="buy-form-name" >
+                        <input type="name" class="buyer-name" placeholder="name">
+                    </label>
+                    <label for="" class="buy-form-name" >
+                        <input type="tel" class="buyer-phone" placeholder="phone">
+                    </label>
+                    <label for="" class="buy-form-name" placeholder=>
+                        <textarea name="buyer-comments" id="" cols="30" rows="10" placeholder="comments" ></textarea>
+                    </label>
+                </form>
+
+                <button class="buy_submit" type="button">Submit</button>
+            </div>-->
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-container container">   
+            <h1 class="hero-title">
+                    <span class="hero-title-ice">ice cream</span>
+                    <span class="hero-title-made">made with</span>
+                    <span class="hero-title-passion">passion</span>  
+            </h1>
+
+           <div class="hero-interactive-elements">
+            <a href="#products" class="hero-link-products">Products</a>
+            
+            <a href="#advantages" class="hero-link">How it’s made?</a>
+          </div>
+          <picture>
+            <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
+            <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
+            <img src="./images/plate-desktop.jpg" alt="a plate" class="plate">
+        </picture>
+         
+
+        <picture>
+            <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
+            <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
+            <img src="./images/ice-cream-desktop.png" alt="ice-cream" class="ice-cream">
+        </picture>
+
+        <picture>
+            <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
+            <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
+            <img src="./images/desktop-dots.png" alt="dots" class="dots">
+        </picture>
+          
+          
+        
+        </div>
+    </header>
+   
+    
+</body>
+<script src="./sass/menu.js"></script>
+</html>
