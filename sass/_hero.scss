@@ -109,9 +109,11 @@
     left:50%;
     transform: translateX(-50%);
     z-index: 2;
+    display:block;
 
     @media screen and (min-width:768px) {
         right:370px;
+        width:268px;
     }
 
     @media screen and (min-width:1200px){
@@ -150,7 +152,7 @@
     position:absolute;
     z-index: 3;
     left:16px;
-    bottom:0;
+    bottom:12px;
     width:152px;
     height:152px;
     display:block;

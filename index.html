@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./sass/main.css">
     <title>ice-cream-site</title>
@@ -12,9 +16,15 @@
     <header>
         <div class="header-container container">
             <a href="" class="logo">
-                <svg class="logo-icon" width="40" height="37" >
-                    <use href="./images/icons.svg#icon-Logo"></use>
-                </svg>      
+            <picture class="logo-img">
+                <source srcset="./images/logo-mob.png 1x, ./images/logo-mob_2x.png 2x " media="(min-width:320px)"
+                    width="40" height="37">
+                <source srcset="./images/logo-tab.png 1x, ./images/logo-tab_2x.png 2x " media="(min-width:768px)"
+                    width="48" height="44">
+                <source srcset="./images/logo-desktop.png 1x, ./images/logo-desktop_2x.png 2x " media="(min-width:1200px)"
+                    width="60" height="65">
+                <img src="./images/logo-desktop.png" alt="ice-cream" class="logo-img" width="60">
+            </picture>
             </a>
         
             <button class="mob-menu-open" type="button" data-menu-open>
@@ -24,7 +34,7 @@
             </button>
             <button class="buy_tablet" type="button">
                 <a href="" class="buy_tablet-link">
-                    Buy now
+                    Buy now >
                 </a>
             </button>
       
@@ -50,7 +60,7 @@
         </nav>
         <button class="buy_desktop" type="button">
             <a href="" class="buy_desktop-link">
-                Buy now
+                Buy now >
             </a>
         </button>
 
@@ -97,7 +107,7 @@
 
                 <button class="buy" type="button">
                     <a href="" class="buy-link">
-                        Buy now
+                        Buy now >
                     </a>
                 </button>
                 </div>
@@ -117,26 +127,43 @@
             
             <a href="#advantages" class="hero-link">How it’s made?</a>
           </div>
+
+
+        <p class="hero-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </p>
+        
+        <ul class="hero-achivements">
+            <li class="hero-achievements-item">
+                <span class="number">16</span>cafes
+            </li>
+            <li class="hero-achievements-item">
+                <span class="number">23</span> food trucks
+            </li>
+        </ul>
+
           <picture>
             <source srcset="./images/plate-tab.png 1x, ./images/plate-tab_2x.png 2x " media="(min-width:768px)" width="152">
             <source srcset="./images/plate-desktop.png 1x, ./images/plate-desktop_2x.png 2x " media="(min-width:1200px)" width="225">
-            <img src="./images/plate-desktop.jpg" alt="a plate" class="plate">
+            <img src="./images/plate-desktop.png" alt="a plate" class="plate">
         </picture>
          
 
         <picture class="ice-cream-img">
-            <source srcset="./images/ice-cream-mobile.png 1x, ./images/ice-cream-mobile_2x.png 2x " media="(min-width:320px)"
-                width="152">
-            <source srcset="./images/ice-cream-tablet.png 1x, ./images/ice-cream-tablet_2x.png 2x " media="(min-width:768px)" width="152">
-            <source srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop_2x.png 2x " media="(min-width:1200px)" width="225">
-            <img src="./images/ice-cream-desktop.png" alt="ice-cream" class="ice-cream">
+            <source srcset="./images/ice-cream-mobile.png 1x, ./images/ice-cream-mobile_2x.png 2x " media="(max-width:767px)"
+                width="177">
+            <source srcset="./images/ice-cream-tablet.png 1x, ./images/ice-cream-tablet_2x.png 2x " media="(min-width:768px)" width="268">
+            <source srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop_2x.png 2x " media="(min-width:1200px)" width="456">
+            <img src="./images/ice-cream-desktop.png" alt="ice-cream" class="ice-cream" width="456">
         </picture>
 
-        <picture>
-            <source srcset="./images/plate-tablet.jpg 1x, ./images/plate-tablet_2x.jpg 2x " media="(min-width:768px)" width="152">
-            <source srcset="./images/plate-desktop.jpg 1x, ./images/plate-desktop_2x.jpg 2x " media="(min-width:1200px)" width="225">
-            <img src="./images/desktop-dots.png" alt="dots" class="dots">
-        </picture>
+        <img class="dots-img" srcset="./images/mob-dots.png 320w,
+                          ./images/mob-dots_2x.png 640w,
+                          ./images/tablet-dots.png 768w,
+                          ./images/desktop-dots.png 1200w,
+                          ./images/desktop-dots_2x.png 2400w" 
+                          src="./images/desktop-dots.png" 
+                          alt="dots" width="100vw">
           
           
         
