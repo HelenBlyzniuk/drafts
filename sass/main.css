@@ -431,7 +431,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .ice-cream-img {
-    right: 370px;
+    left: 70%;
     width: 268px;
   }
 }

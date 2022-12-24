@@ -150,7 +150,7 @@
         <picture class="ice-cream-img">
             <source srcset="./images/ice-cream-mobile.png 1x, ./images/ice-cream-mobile_2x.png 2x " media="(max-width:767px)"
                 width="177">
-            <source srcset="./images/ice-cream-tablet.png 1x, ./images/ice-cream-tablet_2x.png 2x " media="(min-width:768px)" width="268">
+            <source srcset="./images/ice-cream-tablet.png 1x, ./images/ice-cream-tablet_2x.png 2x " media="(min-width:768px) and (max-width:1199px)" width="268">
             <source srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop_2x.png 2x " media="(min-width:1200px)" width="456">
             <img src="./images/ice-cream-desktop.png" alt="ice-cream" class="ice-cream" width="456">
         </picture>
@@ -158,9 +158,13 @@
         <img class="dots-img" srcset="./images/mob-dots.png 320w,
                           ./images/mob-dots_2x.png 640w,
                           ./images/tablet-dots.png 768w,
-                          ./images/desktop-dots.png 1200w" 
-                          src="./images/desktop-dots.png" 
-                          alt="dots" width="100vw">
+                          ./images/tablet-dots_2x.png 1536w,
+                          ./images/desktop-dots.png 1200w,
+                          ./images/desktop-dots_2x.png 2400w" 
+                          src="./images/desktop-dots.png" alt="dots" 
+                          sizes="(min-width:1200px) 100%, (min-width:768px) 100%,
+                          (min-width:480px) 100%, (max-width:479px) 100vw">
+        </div>
           
           
         
