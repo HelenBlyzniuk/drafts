@@ -79,7 +79,11 @@
         display: flex;
         gap: 12px;
         align-items: center;
+        margin-bottom: 19px;
+        @media screen and (min-width:768px){
+        gap: 20px;
         margin-bottom: 39px;
+        }
     @media screen and (min-width:1200px) {
             gap:34px;
             margin-bottom: 109px;
@@ -99,7 +103,7 @@
                 font-style: normal;
                 font-weight: 400;
                 font-size: 12px;
-                line-height: calc(17/15);
+                line-height: 140%;
                 color: #FCFCFC;
         }
                  
@@ -138,16 +142,20 @@
     left:50%;
     transform: translateX(-50%);
     z-index: 2;
-    display:block;
+    width: 177px;
+        height: 217px;
+   
 
     @media screen and (min-width:768px) {
         left:70%;
         width:268px;
+        height: 329px;
     }
 
     @media screen and (min-width:1200px){
         right:92px;
         width:456px;
+        height:560px;
     }
 }
 
