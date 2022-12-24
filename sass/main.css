@@ -204,6 +204,7 @@ header {
 
 @media screen and (min-width: 320px) {
   .buy {
+    display: inline-block;
     min-width: 152px;
     height: 42px;
     background: #F8D24E;
@@ -212,15 +213,12 @@ header {
     border: none;
     display: flex;
     justify-content: center;
-  }
-  .buy-link {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
-    display: inline-block;
     min-width: 152px;
     padding-top: 12px;
   }
@@ -245,8 +243,6 @@ header {
     border-radius: 10px;
     margin-left: 32px;
     border: none;
-  }
-  .buy_tablet-link {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -284,19 +280,16 @@ header {
   border-radius: 10px;
   margin-left: 204px;
   border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
 }
 @media screen and (max-width: 1199px) {
   .buy_desktop {
     display: none;
   }
-}
-.buy_desktop-link {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-decoration: none;
 }
 
 .desktop-nav-list {
