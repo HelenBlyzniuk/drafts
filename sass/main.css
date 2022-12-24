@@ -90,13 +90,13 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .logo-icon {
+  .logo-img {
     width: 48px;
     height: 44px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .logo-icon {
+  .logo-img {
     width: 60px;
     height: 65px;
   }
