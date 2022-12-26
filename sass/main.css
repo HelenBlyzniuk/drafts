@@ -462,6 +462,16 @@ p {
   font-size: 12px;
   line-height: 1.25;
   color: #F8D24E;
+  transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hero-link:hover {
+  color: #0A8817;
+}
+.hero-link:focus {
+  color: #FCFCFC;
+}
+.hero-link:disabled {
+  color: #ABABAB;
 }
 @media screen and (min-width: 1200px) {
   .hero-link {
@@ -525,6 +535,18 @@ p {
   padding-top: 11px;
   font-weight: 600;
   font-size: 12px;
+  transition: border 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.hero-link-products:hover {
+  border: 2px solid rgb(10, 136, 23);
+  cursor: pointer;
+}
+.hero-link-products:focus {
+  border: 2px solid rgb(10, 136, 23);
+  color: #FCFCFC;
+}
+.hero-link-products:disabled {
+  border: 2px solid rgb(171, 171, 171);
 }
 @media screen and (min-width: 1200px) {
   .hero-link-products {
@@ -542,6 +564,7 @@ p {
   z-index: 2;
   width: 177px;
   height: 217px;
+  transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 @media screen and (min-width: 768px) {
   .ice-cream-img {
@@ -561,10 +584,12 @@ p {
 .dots-img {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 100%;
   z-index: 1;
   width: 100vw;
   height: auto;
+  transform: translateX(-100%);
+  transition: transform 250ms cubic-bezier(0.19, 1, 0.22, 1) 250ms;
 }
 @media screen and (min-width: 460px) {
   .dots-img {
