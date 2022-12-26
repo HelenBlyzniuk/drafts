@@ -1,0 +1,24 @@
+.invisible{
+    appearance: none;
+}
+
+.buy-form-product{
+    display:block;
+    width:100px;
+    height:100px;
+    background-color: antiquewhite;
+    color:blue;
+    border: 3px solid red;
+    font-size: 25px;
+}
+
+.invisible:checked +.buy-form-product{
+border: 3px solid white;
+}
+.buy-form-product::before{
+    content: '';
+    display:block;
+    width:100px;
+    height:100px;
+    background-image: url(../images/pic_icecream.png);
+}
