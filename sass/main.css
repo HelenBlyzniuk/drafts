@@ -347,55 +347,6 @@ header {
   background-image: url(../images/pic_icecream.png);
 }
 
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-button {
-  display: block;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-}
-
-p {
-  margin: 0;
-}
-
-@media screen and (max-width: 479px) {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 0 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-  }
-}
-
 .hero {
   background-color: rgb(132, 161, 120);
 }
@@ -466,6 +417,8 @@ p {
 }
 .hero-link:hover {
   color: #0A8817;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 .hero-link:focus {
   color: #FCFCFC;
@@ -524,6 +477,27 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .hero-description-link {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-description-link {
+    display: block;
+    width: 40px;
+    margin-left: 184px;
+    margin-top: 12px;
+    fill: #FCFCFC;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-description-link {
+    margin-left: 241px;
+    margin-top: 24px;
+  }
+}
+
 .hero-link-products {
   display: block;
   border: 2px solid #F8D24E;
@@ -535,18 +509,7 @@ p {
   padding-top: 11px;
   font-weight: 600;
   font-size: 12px;
-  transition: border 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.hero-link-products:hover {
-  border: 2px solid rgb(10, 136, 23);
-  cursor: pointer;
-}
-.hero-link-products:focus {
-  border: 2px solid rgb(10, 136, 23);
-  color: #FCFCFC;
-}
-.hero-link-products:disabled {
-  border: 2px solid rgb(171, 171, 171);
+  color: #131313;
 }
 @media screen and (min-width: 1200px) {
   .hero-link-products {
@@ -554,6 +517,21 @@ p {
     height: 42px;
     font-size: 14px;
   }
+}
+
+.hero-link-products:hover {
+  cursor: pointer;
+  border: 2px solid rgb(10, 136, 23);
+  color: #FCFCFC;
+}
+
+.hero-link-products:focus {
+  border: 2px solid rgb(10, 136, 23);
+  color: #FCFCFC;
+}
+
+.hero-link-products:disabled {
+  border: 2px solid rgb(171, 171, 171);
 }
 
 .ice-cream-img {
